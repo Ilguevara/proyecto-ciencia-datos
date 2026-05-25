@@ -1,60 +1,52 @@
-# Proyecto de Análisis de Personas Desaparecidas en Colombia
+# Proyecto de Análisis de Víctimas por Minas Antipersonal y Municiones sin Explotar en Colombia
 
 ## Descripción General
 
-Este proyecto tiene como objetivo analizar el conjunto de datos histórico de personas desaparecidas en Colombia publicado por el portal oficial de datos abiertos del gobierno colombiano. El análisis busca identificar patrones sociales, demográficos, geográficos y temporales relacionados con las desapariciones registradas en el país.
+Este proyecto tiene como objetivo analizar el conjunto de datos relacionado con víctimas de accidentes ocasionados por minas antipersonal (MAP), municiones sin explotar (MUSE) y eventos asociados al desminado militar en Colombia.
 
-El dataset utilizado corresponde a:
+La información proviene del portal oficial de datos abiertos del gobierno colombiano y contiene registros históricos sobre personas afectadas por este tipo de eventos, incluyendo variables geográficas, demográficas y sociales.
 
-**“Desaparecidos en Colombia – Histórico marzo de 2026”**
-
-La información proviene del portal de datos abiertos del Estado colombiano y contiene registros históricos asociados a personas desaparecidas, incluyendo variables demográficas, sociales, territoriales y judiciales.
+El análisis permitirá identificar patrones territoriales, temporales y poblacionales asociados a una de las problemáticas más sensibles derivadas del conflicto armado colombiano.
 
 ---
 
 # ¿Por qué se escogió este proyecto?
 
-Este proyecto fue seleccionado debido a su gran impacto social, humano y analítico. La problemática de las desapariciones en Colombia representa una situación histórica compleja que involucra múltiples factores:
+Este proyecto fue seleccionado debido a la gran relevancia social, histórica y humanitaria que tienen las minas antipersonal en Colombia.
 
-* Violencia y conflicto armado.
-* Problemáticas sociales.
-* Desplazamiento forzado.
-* Trata de personas.
-* Violencia intrafamiliar.
-* Vulnerabilidad de ciertos grupos poblacionales.
-* Falencias institucionales y judiciales.
+Durante décadas, el conflicto armado dejó miles de víctimas civiles y militares afectadas por explosivos sembrados en distintas regiones del país. Las minas antipersonal han impactado especialmente zonas rurales, comunidades vulnerables y territorios históricamente afectados por la violencia.
 
-Además del valor social del tema, el dataset permite realizar múltiples tipos de análisis de datos:
+Además del impacto social, este dataset permite desarrollar múltiples análisis relacionados con:
 
-* Análisis estadístico.
-* Visualización de datos.
-* Minería de datos.
-* Predicción de tendencias.
-* Segmentación poblacional.
-* Análisis temporal.
-* Análisis geográfico.
-* Detección de patrones.
+- Distribución territorial del conflicto.
+- Identificación de zonas críticas.
+- Análisis temporal de eventos.
+- Caracterización demográfica de víctimas.
+- Estudios geoespaciales.
+- Visualización de datos.
+- Análisis estadístico.
+- Construcción de mapas y dashboards.
 
-Por lo tanto, el proyecto no solo tiene relevancia técnica, sino también una fuerte importancia ética y social.
+El proyecto combina ciencia de datos con una problemática real de alto impacto nacional.
 
 ---
 
 # Objetivo General
 
-Desarrollar un análisis exploratorio y estadístico sobre los registros históricos de personas desaparecidas en Colombia para identificar patrones relevantes asociados al comportamiento de las desapariciones.
+Realizar un análisis exploratorio y estadístico sobre los registros de víctimas por minas antipersonal y municiones sin explotar en Colombia para identificar patrones geográficos, temporales y demográficos.
 
 ---
 
 # Objetivos Específicos
 
-* Analizar las características demográficas de las personas desaparecidas.
-* Identificar los grupos etarios más afectados.
-* Evaluar diferencias por sexo y género.
-* Analizar la distribución territorial de las desapariciones.
-* Estudiar el comportamiento temporal de los casos.
-* Identificar patrones relacionados con etnias, escolaridad y estado civil.
-* Generar visualizaciones que faciliten la interpretación de los datos.
-* Construir una base sólida para futuros modelos predictivos o análisis avanzados.
+- Identificar los departamentos con mayor cantidad de accidentes.
+- Analizar la evolución temporal de los eventos.
+- Estudiar diferencias entre víctimas civiles y fuerza pública.
+- Evaluar la distribución entre zonas rurales y urbanas.
+- Analizar grupos de edad más afectados.
+- Identificar posibles patrones territoriales.
+- Generar visualizaciones geográficas y estadísticas.
+- Comprender el impacto social del conflicto armado.
 
 ---
 
@@ -62,9 +54,11 @@ Desarrollar un análisis exploratorio y estadístico sobre los registros histór
 
 Dataset oficial del portal de datos abiertos de Colombia:
 
-* Datos Abiertos Colombia
-* Categoría: Justicia y Derecho
-* Nombre del dataset: “Desaparecidos en Colombia - Histórico marzo de 2026”
+- Datos Abiertos Colombia
+- Categoría: Gobierno y Seguridad
+- Dataset relacionado con víctimas de minas antipersonal y municiones sin explotar
+
+[Datos Abiertos Colombia](https://www.datos.gov.co/d/yhxn-eqqw?utm_source=chatgpt.com)
 
 ---
 
@@ -74,118 +68,104 @@ Dataset oficial del portal de datos abiertos de Colombia:
 
 El dataset contiene un total de:
 
-### 30 variables
+### 18 variables
 
-Cada variable aporta información importante para comprender las características de las desapariciones registradas.
+Estas variables permiten realizar análisis completos desde dimensiones geográficas, sociales y temporales.
 
 ---
 
 # Variables del Dataset
 
-A continuación se describen todas las variables presentes en el conjunto de datos:
 
-| #  | Variable                                           | Descripción                                                    |
-| -- | -------------------------------------------------- | -------------------------------------------------------------- |
-| 1  | ID                                                 | Identificador único del registro.                              |
-| 2  | Entidad que realiza el registro de la desaparición | Institución encargada de registrar el caso.                    |
-| 3  | Estado de la desaparición                          | Estado actual del caso de desaparición.                        |
-| 4  | Clasificación de la desaparición                   | Tipo o categoría de la desaparición registrada.                |
-| 5  | Sexo del desaparecido                              | Sexo biológico registrado de la persona desaparecida.          |
-| 6  | Grupo mayor y menor de edad del desaparecido       | Clasificación general por mayoría o minoría de edad.           |
-| 7  | Grupo de edad quinquenal del desaparecido          | Segmentación por rangos de edad de cinco años.                 |
-| 8  | Grupo de edad judicial del desaparecido            | Clasificación judicial de la edad.                             |
-| 9  | Ciclo vital del desaparecido                       | Etapa de vida de la persona desaparecida.                      |
-| 10 | Estado civil del desaparecido                      | Estado civil registrado de la persona.                         |
-| 11 | Escolaridad del desaparecido                       | Nivel educativo alcanzado.                                     |
-| 12 | Identidad de género del desaparecido               | Identidad de género registrada.                                |
-| 13 | Orientación sexual del desaparecido                | Orientación sexual registrada en el sistema.                   |
-| 14 | Transgénero                                        | Indicación sobre condición transgénero.                        |
-| 15 | Pueblo indígena del desaparecido                   | Pueblo indígena al que pertenece la persona.                   |
-| 16 | Pertenencia étnica del desaparecido                | Grupo étnico registrado.                                       |
-| 17 | Pertenencia grupal del desaparecido                | Grupo poblacional al que pertenece.                            |
-| 18 | País de nacimiento del desaparecido                | País de origen de la persona desaparecida.                     |
-| 19 | Fecha de la desaparición                           | Fecha exacta de ocurrencia de la desaparición.                 |
-| 20 | Año de la desaparición                             | Año en el que ocurrió el caso.                                 |
-| 21 | Mes de la desaparición                             | Mes en que ocurrió la desaparición.                            |
-| 22 | Día de la desaparición                             | Día específico de la desaparición.                             |
-| 23 | País de desaparición                               | País donde ocurrió el hecho.                                   |
-| 24 | Departamento de desaparición                       | Departamento colombiano donde se registró el caso.             |
-| 25 | Municipio de desaparición                          | Municipio donde ocurrió la desaparición.                       |
-| 26 | Zona de desaparición                               | Zona urbana o rural asociada al caso.                          |
-| 27 | Lugar de desaparición                              | Lugar específico relacionado con la desaparición.              |
-| 28 | Presunto responsable de la desaparición            | Actor o posible responsable vinculado al caso.                 |
-| 29 | Fecha de registro del caso                         | Fecha en la que el caso fue ingresado oficialmente al sistema. |
-| 30 | Año de registro del caso                           | Año en que se realizó el registro oficial.                     |
+| #   | Variable               | Descripción                                                    |
+| --- | ---------------------- | -------------------------------------------------------------- |
+| 1   | departamento           | Departamento donde ocurrió el accidente.                       |
+| 2   | codigodanedepartamento | Código DANE del departamento.                                  |
+| 3   | municipio              | Municipio donde ocurrió el evento.                             |
+| 4   | codigodanemunicipio    | Código DANE del municipio.                                     |
+| 5   | tipoarea               | Indica si el evento ocurrió en zona rural o urbana.            |
+| 6   | sitio                  | Lugar específico donde ocurrió el accidente.                   |
+| 7   | ano                    | Año del evento.                                                |
+| 8   | mes                    | Mes del evento.                                                |
+| 9   | rangoedad              | Clasificación de edad de la víctima.                           |
+| 10  | grupoetnico            | Grupo étnico al que pertenece la víctima.                      |
+| 11  | condicion              | Define si la víctima pertenece a la fuerza pública o es civil. |
+| 12  | estado                 | Estado de la víctima después del evento (herido o muerto).     |
+| 13  | genero                 | Género de la víctima.                                          |
+| 14  | latitudcabecera        | Latitud del lugar del evento.                                  |
+| 15  | longitudcabecera       | Longitud del lugar del evento.                                 |
+| 16  | tipoevento             | Tipo de evento relacionado con minas o municiones.             |
+| 17  | ubicacion              | Coordenadas geográficas del evento.                            |
+| 18  | actividad              | Actividad que realizaba la víctima antes del accidente.        |
+
 
 ---
 
 # Importancia de las Variables
 
-Las variables seleccionadas permiten abordar el fenómeno desde diferentes dimensiones:
+## Dimensión Geográfica
 
-## Dimensión Demográfica
+Las variables geográficas permiten:
 
-Permite estudiar:
+- Identificar regiones más afectadas.
+- Construir mapas de calor.
+- Analizar distribución territorial.
+- Detectar zonas de alto riesgo.
 
-* Edad.
-* Sexo.
-* Estado civil.
-* Escolaridad.
-* Género.
-* Orientación sexual.
+Variables importantes:
 
-Esto ayuda a identificar qué grupos poblacionales presentan mayor vulnerabilidad.
-
----
-
-## Dimensión Territorial
-
-Incluye:
-
-* País.
-* Departamento.
-* Municipio.
-* Zona.
-* Lugar de desaparición.
-
-Gracias a estas variables es posible construir mapas de calor, identificar regiones críticas y analizar comportamientos geográficos.
+- departamento
+- municipio
+- latitudcabecera
+- longitudcabecera
+- ubicacion
 
 ---
 
 ## Dimensión Temporal
 
-Las variables relacionadas con fechas permiten:
+Las variables temporales permiten:
 
-* Analizar tendencias históricas.
-* Detectar aumentos o disminuciones por años.
-* Estudiar comportamientos mensuales.
-* Identificar temporadas críticas.
+- Analizar tendencias históricas.
+- Identificar años críticos.
+- Estudiar evolución del conflicto.
+- Relacionar eventos con procesos de paz.
 
----
+Variables importantes:
 
-## Dimensión Social
-
-Variables como:
-
-* Pertenencia étnica.
-* Pueblo indígena.
-* Pertenencia grupal.
-* Identidad de género.
-
-permiten estudiar desigualdades sociales y vulnerabilidad diferencial.
+- ano
+- mes
 
 ---
 
-## Dimensión Judicial
+## Dimensión Social y Demográfica
 
-Variables como:
+Permite analizar:
 
-* Estado de la desaparición.
-* Clasificación.
-* Presunto responsable.
-* Entidad registradora.
+- Edad de las víctimas.
+- Género.
+- Condición civil o militar.
+- Pertenencia étnica.
 
-permiten analizar el comportamiento institucional y judicial de los casos.
+Variables importantes:
+
+- rangoedad
+- genero
+- grupoetnico
+- condicion
+
+---
+
+## Dimensión del Evento
+
+Estas variables ayudan a comprender el contexto del accidente:
+
+- tipoevento
+- actividad
+- estado
+- sitio
+
+Gracias a esto es posible estudiar cómo y bajo qué circunstancias ocurren los eventos.
 
 ---
 
@@ -193,14 +173,13 @@ permiten analizar el comportamiento institucional y judicial de los casos.
 
 Este proyecto permite responder preguntas como:
 
-* ¿Qué grupos de edad presentan mayor número de desapariciones?
-* ¿Qué departamentos registran más casos?
-* ¿Existen diferencias significativas entre hombres y mujeres desaparecidos?
-* ¿Qué tendencias históricas presentan los casos?
-* ¿Qué grupos sociales son más vulnerables?
-* ¿Existen patrones temporales específicos?
-* ¿Cómo varía la desaparición entre zonas urbanas y rurales?
-* ¿Qué relación existe entre escolaridad y desaparición?
+- ¿Qué departamentos presentan más accidentes?
+- ¿La mayoría de eventos ocurren en zonas rurales o urbanas?
+- ¿Qué grupos poblacionales son más afectados?
+- ¿Existen años con incrementos significativos?
+- ¿Qué tipo de víctimas predominan: civiles o fuerza pública?
+- ¿Cuáles son las principales actividades realizadas antes del accidente?
+- ¿Qué regiones siguen presentando altos niveles de riesgo?
 
 ---
 
@@ -208,137 +187,137 @@ Este proyecto permite responder preguntas como:
 
 ## Análisis Exploratorio de Datos (EDA)
 
-* Limpieza de datos.
-* Detección de valores nulos.
-* Distribución de variables.
-* Identificación de outliers.
-* Análisis descriptivo.
+- Limpieza de datos.
+- Tratamiento de valores nulos.
+- Distribución de variables.
+- Estadísticas descriptivas.
+- Detección de inconsistencias.
 
 ---
 
 ## Visualización de Datos
 
-* Histogramas.
-* Gráficas de barras.
-* Gráficas temporales.
-* Mapas geográficos.
-* Diagramas circulares.
-* Heatmaps.
+- Histogramas.
+- Gráficas de barras.
+- Series temporales.
+- Mapas geográficos.
+- Heatmaps.
+- Dashboards interactivos.
 
 ---
 
 ## Estadística Descriptiva
 
-* Frecuencias.
-* Porcentajes.
-* Medidas de tendencia central.
-* Medidas de dispersión.
+- Frecuencias.
+- Porcentajes.
+- Distribuciones.
+- Comparaciones regionales.
 
 ---
 
-## Machine Learning (Posible Expansión)
+## Análisis Geoespacial
 
-A futuro, el proyecto podría ampliarse hacia:
+Debido a las coordenadas geográficas, el dataset permite:
 
-* Modelos predictivos.
-* Clasificación de riesgo.
-* Clustering de regiones.
-* Predicción temporal.
-* Detección automática de patrones.
+- Construcción de mapas interactivos.
+- Identificación de zonas críticas.
+- Análisis espacial de eventos.
+- Georreferenciación de accidentes.
 
 ---
 
 # Tecnologías Propuestas
 
-Dependiendo del desarrollo final del proyecto, podrían utilizarse herramientas como:
-
 ## Lenguajes y Librerías
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- Scikit-learn
+- GeoPandas
 
 ---
 
 ## Herramientas de Visualización
 
-* Power BI
-* Tableau
-* Plotly
-* Dash
+- Power BI
+- Tableau
+- Folium
+- Plotly Dash
 
 ---
 
 ## Entornos de Desarrollo
 
-* Jupyter Notebook
-* Visual Studio Code
-* Google Colab
+- Jupyter Notebook
+- Google Colab
+- Visual Studio Code
 
 ---
 
 # Metodología del Proyecto
 
-El proyecto puede desarrollarse siguiendo las siguientes etapas:
-
 ## 1. Recolección de Datos
 
-Obtención del dataset oficial desde el portal de datos abiertos.
+Obtención del dataset desde el portal oficial de datos abiertos.
 
 ---
 
 ## 2. Limpieza y Preparación
 
-* Eliminación de inconsistencias.
-* Tratamiento de datos nulos.
-* Normalización.
-* Conversión de formatos.
+- Corrección de inconsistencias.
+- Eliminación de duplicados.
+- Tratamiento de valores faltantes.
+- Conversión de formatos.
 
 ---
 
 ## 3. Exploración de Datos
 
-* Estadísticas descriptivas.
-* Visualización inicial.
-* Identificación de patrones.
+- Estadísticas descriptivas.
+- Identificación de patrones.
+- Visualización preliminar.
 
 ---
 
 ## 4. Análisis Profundo
 
-* Correlaciones.
-* Tendencias.
-* Comparaciones regionales.
-* Segmentaciones.
+- Comparaciones regionales.
+- Tendencias históricas.
+- Relación entre variables.
+- Análisis geográfico.
 
 ---
 
 ## 5. Presentación de Resultados
 
-* Dashboards.
-* Informes.
-* Visualizaciones.
-* Conclusiones.
+- Informes.
+- Dashboards.
+- Visualizaciones interactivas.
+- Conclusiones.
 
 ---
 
 # Impacto Esperado
 
-El proyecto busca generar:
+Este proyecto busca aportar:
 
-* Mayor comprensión sobre las desapariciones en Colombia.
-* Información útil para análisis sociales.
-* Evidencia estadística para investigaciones.
-* Herramientas de apoyo para toma de decisiones.
-* Conciencia sobre una problemática nacional.
+- Comprensión del impacto territorial de las minas antipersonal.
+- Evidencia estadística sobre víctimas del conflicto.
+- Información útil para estudios sociales y humanitarios.
+- Apoyo a investigaciones académicas.
+- Conciencia sobre las consecuencias del conflicto armado.
 
 ---
 
-# Conclusión
+# Conclusiones
 
-Este proyecto representa una oportunidad para aplicar técnicas de análisis de datos a una problemática real de alto impacto social. Gracias a la riqueza y amplitud del dataset, es posible realizar múltiples enfoques analíticos que permitan comprender mejor el fenómeno de las desapariciones en Colombia.
+El análisis de víctimas por minas antipersonal y municiones sin explotar es especialmente relevante para Colombia debido a la larga historia de conflicto armado interno que ha afectado múltiples regiones del país.
 
-Además de fortalecer habilidades técnicas en ciencia de datos, visualización y análisis estadístico, el proyecto también aporta una perspectiva humana y social al uso de la tecnología y los datos.
+Las minas antipersonal representan una de las consecuencias más graves y persistentes de la violencia, afectando principalmente comunidades rurales, campesinos, población civil y miembros de la fuerza pública. Incluso años después de muchos enfrentamientos armados, estos artefactos continúan generando accidentes y limitando el desarrollo de distintas regiones.
+
+Este proyecto permite comprender cómo se distribuyen territorialmente los eventos, cuáles son los grupos más afectados y cómo ha evolucionado la problemática a lo largo del tiempo.
+
+Además, el uso de ciencia de datos y análisis geoespacial ayuda a generar información valiosa para procesos de desminado, prevención, políticas públicas y estudios relacionados con la construcción de paz y la seguridad en Colombia.
